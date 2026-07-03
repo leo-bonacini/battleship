@@ -202,16 +202,16 @@
     background: var(--panel);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 14px 20px;
-    min-width: 220px;
+    padding: 10px 14px;
+    min-width: 165px;
     flex-shrink: 0;
     margin-top: 38px; /* lines up with the top of the board grids */
     box-shadow: 0 4px 14px rgba(0,0,0,0.4);
   }
 
   .fleet-column h3 {
-    margin: 0 0 10px;
-    font-size: 0.95em;
+    margin: 0 0 8px;
+    font-size: 0.88em;
     color: var(--accent);
     text-align: center;
   }
@@ -219,9 +219,9 @@
   .fleet-item {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 4px 0;
-    font-size: 0.85em;
+    gap: 6px;
+    padding: 3px 0;
+    font-size: 0.76em;
   }
 
   .fleet-item.sunk {
@@ -230,7 +230,7 @@
   }
 
   .fleet-icon {
-    width: 18px;
+    width: 15px;
     text-align: center;
   }
 
@@ -241,7 +241,7 @@
   .fleet-blocks {
     flex-shrink: 0;
     display: block;
-    height: 13px;
+    height: 10px;
   }
 
   .fleet-blocks svg {
@@ -863,7 +863,7 @@
 
       const blocks = document.createElement('span');
       blocks.className = 'fleet-blocks';
-      blocks.style.width = `${ship.size * 11}px`;
+      blocks.style.width = `${ship.size * 8}px`;
       blocks.innerHTML = shipSvgMarkup(ship.size, 'H', ship.sunk ? 'sunk' : '');
 
       item.append(icon, name, blocks);
